@@ -1,4 +1,4 @@
-/* Para mobile devices */
+/* Para  utilizar en mobile devices */
 body, * {
     margin: 0;
     border: 0;
@@ -189,8 +189,6 @@ div div div ul li {
     float: left;
     color: #ffffff;
 }
-
-
 
 
 @media only screen and (max-width: 576px) {
