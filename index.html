@@ -6,18 +6,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <!-- autor de la página -->
     <meta name="author" content="Carlos Aliaga" />
-    <!-- autor de la página -->
     <meta name="description" content="Viajando por Chile" />
-    <!-- descripción del sitio -->
+    <!-- palabras clave -->
     <meta
       name="keywords"
-      content="viajes, paisajes, Chile, fotos, lugares, naturaleza, asombro, norte, sur, experiencias, aventuras, ocio, tiempo libre"
-    />
-    <!-- palabras importantes -->
-    <link rel="shortcut icon" type=”image/png” href="./assets/img/favicon.png">
+      content="viajes, paisajes, Chile, fotos, lugares, naturaleza, asombro, norte, sur, experiencias, aventuras, ocio, tiempo libre"/>
     <!-- icono de la página -->
-
+    <link rel="shortcut icon" type=”image/png” href="./assets/img/favicon.png">
     <!--CSS de Bootstrap 4.6.x-->
     <link
       rel="stylesheet"
@@ -73,9 +70,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#inicio"
-                >Inicio<span class="sr-only">Actual</span></a
-              >
+              <a class="nav-link" href="#rotating_photos">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#quienesSomos">Quiénes somos</a>
@@ -109,7 +104,7 @@
             <img class="d-block w-100 h-50 img-responsive" src="assets/img/carousel1.jpg" alt="First slide">
             <figcaption class="carousel-caption">Llamas</figcaption>
           </div>
-          <div class="carousel-item item data-interval=000">
+          <div class="carousel-item item data-interval=1000">
             <img class="d-block w-100 h-50 img-responsive" src="assets/img/carousel2.jpg" alt="Second slide">
             <figcaption class="carousel-caption">Isla de Pascua</figcaption>
           </div>
@@ -231,16 +226,33 @@
     <h4 id="contacto" class="container">Contacto</h4>
 
 <!-- Formulario de contacto -->
-    <form class="container" action="index.html" method="post">
-      <div class="typeform-widget" data-url="https://form.typeform.com/to/FBckfj?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-    </form>
+<form id="form" class="container-fluid">
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Nombre</label>
+      <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="carlos aliaga">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Asunto</label>
+        <input type="asunto" class="form-control" id="exampleFormControlInput2" placeholder="asunto">
+      </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Mensaje</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="mensaje"></textarea>
+
+        <div>
+            <a target="_blank" class="fcc-btn" href="https://github.com/carlosaliaga21607/Prueba-Viajes-Chile">
+                <button id="button" type="button" class="btn btn-info">Enviar</button></a>  
+    </div>
+
+    </div>
+  </form>
 
     <footer>
-      <div class="container">   
+      <div class="container-fluid">   
         <div id="rrss">
           <ul class="flex-item">
             <li>    
-              <a class="logoText" href="#">VIAJES CHILE</a>
+              <a class="logoText" href="#">VIAJES CHILE</>
         
               <a href="https://www.facebook.com/" target="_blank"
                 ><i
@@ -268,7 +280,7 @@
             <li>
               <a href="https://www.linkedin.com" target="_blank"
                 ><i
-                  class="fab fa-linkedin fa-2x btn-secondary"
+                  class="fab fa-linkedin fa-2x"
                   aria-hidden="true"
                   data-toggle="tooltip"
                   data-placement="top"
@@ -276,19 +288,6 @@
                 ></i
               ></a>
             </li>
-
-            <li>
-              <a href="https://www.instagram.com/" target="_blank"
-                ><i
-                  class="fab fa-instagram fa-2x"
-                  aria-hidden="true"
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="Instagram"
-                ></i
-              ></a>
-            </li>
-
             <li>
               <a href="https://github.com/carlosaliaga21607/Prueba-Viajes-Chile" target="_blank"
                 ><i

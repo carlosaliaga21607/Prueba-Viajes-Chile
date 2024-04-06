@@ -1,18 +1,16 @@
 $(document).ready(function () {
+  var $root = $("html, body");
 
-
-    var $root = $('html, body');
-
-$('a[href^="#"]').click(function () {
-    $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top - 100
-    }, 500);
+  $('a[href^="#"]').click(function () {
+    $root.animate(
+      {
+        scrollTop: $($.attr(this, "href")).offset().top - 100,
+      },
+      500
+    );
 
     return false;
-});
-
-
-
+  });
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
@@ -45,36 +43,34 @@ $('a[href^="#"]').click(function () {
   );
 
   $(".card1")
-  .mouseover(function () {
-    $(".card1txt").css("color", "#000000");
-  })
-  .mouseleave(function () {
-    $(".card1txt").css("color", "#ffffff");
-  });
+    .mouseover(function () {
+      $(".card1txt").css("color", "#000000");
+    })
+    .mouseleave(function () {
+      $(".card1txt").css("color", "#ffffff");
+    });
 
   $(".card2")
-  .mouseover(function () {
-    $(".card2txt").css("color", "#000000");
-  })
-  .mouseleave(function () {
-    $(".card2txt").css("color", "#ffffff");
-  });
+    .mouseover(function () {
+      $(".card2txt").css("color", "#000000");
+    })
+    .mouseleave(function () {
+      $(".card2txt").css("color", "#ffffff");
+    });
 
   $(".card3")
-  .mouseover(function () {
-    $(".card3txt").css("color", "#000000");
-  })
-  .mouseleave(function () {
-    $(".card3txt").css("color", "#ffffff");
-  });
+    .mouseover(function () {
+      $(".card3txt").css("color", "#000000");
+    })
+    .mouseleave(function () {
+      $(".card3txt").css("color", "#ffffff");
+    });
 
   $(".card4")
-  .mouseover(function () {
-    $(".card4txt").css("color", "#000000");
-  })
-  .mouseleave(function () {
-    $(".card4txt").css("color", "#ffffff");
-  });
-
-
+    .mouseover(function () {
+      $(".card4txt").css("color", "#000000");
+    })
+    .mouseleave(function () {
+      $(".card4txt").css("color", "#ffffff");
+    });
 });
